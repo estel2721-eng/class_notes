@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소프트웨어 기술 설문지</title>
+    <style>
+        @font-face {
+            font-family: 'YeogiOttaeJalnan';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'OngleipKonkon';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        body {
+            background: #eee;
+            font-family: 'OngleipKonkon';
+        }
+
+        h1 {
+            text-align: center;
+            color: #d85555;
+            font-family: 'YeogiOttaeJalnan';
+        }
+
+        p {
+            padding: 0 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .main {
+            background: #eec9c9;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .main div {
+            margin-bottom: 20px;
+        }
+
+        .main div strong {
+            color: rgb(83, 41, 138);
+            font-family: 'YeogiOttaeJalnan';
+        }
+
+        input,
+        select,
+        textarea {
+            font-family: 'YeogiOttaeJalnan';
+        }
+
+        footer p {
+            font-size: 18px;
+            background: #d4b5e2;
+            padding: 0px 10px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>설문지</h1>
+        <p>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</h3>
+    </header>
+    <hr>
+    <div class="main">
+        <form action="">
+            <div>
+                <strong>학년</strong>
+                <input type="radio" name="grade">
+                <label>1학년</label>
+                <input type="radio" name="grade">
+                <label>2학년</label>
+                <input type="radio" name="grade">
+                <label>3학년</label>
+                <input type="radio" name="grade">
+                <label>4학년</label>
+            </div>
+            <div>
+                <strong>이름</strong>
+                <input type="text" placeholder="이름을 입력해주세요">
+            </div>
+            <div>
+                <strong>성별</strong>
+                <input type="radio" name="gender" id="">
+                <label for="">남</label>
+                <input type="radio" name="gender" id="">
+                <label for="">여</label>
+            </div>
+            <div>
+                <strong>관심분야</strong>
+                <select name="" id="">
+                    <option value="디자인">디자인</option>
+                    <option value="개발">개발</option>
+                    <option value="기획">기획</option>
+                </select>
+            </div>
+            <div>
+                <strong>진로(다중 선택)</strong>
+                <input type="checkbox" name="" id="">
+                <label for="">개발</label>
+                <input type="checkbox" name="" id="">
+                <label for="">기획</label>
+                <input type="checkbox" name="" id="">
+                <label for="">경영</label>
+            </div>
+            <div>
+                <strong>남기고싶은 말</strong>
+                <textarea rows="10" cols="50" name="" id="" placeholder="글을 남겨주세요"></textarea>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <hr>
+        <p>
+            Copyright 2026 MoonyoungDo. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

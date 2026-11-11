@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터(선택자)</title>
+    <style>
+        div>div>strong {
+            background: yellow;
+        }
+
+        /* 자손 선택자 */
+        ul strong {
+            color: dodgerblue;
+        }
+
+        .warning {
+            color: tomato;
+        }
+
+        .main {
+            background: aliceblue;
+        }
+
+        /* 아이디 선택자 */
+        #list {
+            background: mistyrose;
+        }
+
+        #list span {
+            color: forestgreen;
+        }
+
+        /* 가상 클래스 선택자 */
+        /* 어떤 상황이 발생 하였을 때만 적용하도록 css 표준에 만들어진 선택자*/
+
+        h3::first-letter {
+            color: tomato;
+        }
+
+        li:hover {
+            background: yellowgreen;
+            box-shadow: 2px 2px 2px 2px #00000050;
+            transition: 1s ease-out;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <h3>Web Programming</h3>
+    <hr>
+    <div>
+        <div>2026 IT 5기 <strong>학습내용</strong>입니다.</div>
+        <ul id="list">
+            <li><span>HTML5</span></li>
+            <li><span>CSS</span></li>
+            <li><strong>JAVASCRIPT</strong></li>
+            <li><strong>JQUERY</strong></li>
+        </ul>
+        <div class="warning">평가는 과목별이며, 점수가 60점이하는 F</div>
+
+    </div>
+</body>
+
+</html>

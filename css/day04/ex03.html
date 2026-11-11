@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        span {
+            transition: font-size 5s;
+        }
+
+        span:hover {
+            font-size: 800%;
+        }
+
+        div {
+            display: inline-block;
+            padding: 5px;
+            color: #fff;
+            background: #557945;
+        }
+
+        #rotate:hover {
+            transform: rotate(20deg);
+        }
+
+        #skew:hover {
+            transform: skew(0, -20deg);
+        }
+
+        #translate:hover {
+            transform: translate(0, 100px);
+        }
+
+        #scale:hover {
+            transform: scale(3, 1)
+        }
+
+        #rotate:active {
+            background: #F1A344;
+        }
+
+        #skew:active {
+            background: #F1A344;
+        }
+
+        #translate:active {
+            background: #F1A344;
+        }
+
+        #scale:active {
+            background: #F1A344;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Transition</h3>
+    <hr>
+    <span>사랑</span>
+    <div id="rotate">LOVE(20deg 회전)</div>
+    <div id="skew">LOVE(0,-20deg 기울임)</div>
+    <div id="translate">LOVE(100px 이동)</div>
+    <div id="scale">LOVE(3,1 확대 축소)</div>
+</body>
+
+</html>

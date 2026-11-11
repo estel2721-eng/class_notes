@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow - visible, scroll, hidden</title>
+    <style>
+        p {
+            background: #fcc;
+            width: 10em;
+            height: 3em;
+            padding: 10px;
+            border: 1px solid #f00;
+        }
+        p:nth-of-type(1) {
+            overflow: visible;
+        }
+        p:nth-of-type(2) {
+            overflow: scroll;
+        }
+        p:nth-of-type(3) {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h3>overflow</h3>
+    <p>overflow에 visible 값을 적용하면
+        콘텐츠 박스를 넘어가서도 출력됩니다.
+    </p><br>
+    <p>overflow에 scroll 값을 적용하면
+        콘텐츠 박스를 스크롤 할 수 있습니다.
+    </p><br>
+    <p>overflow에 hidden 값을 적용하면
+        콘텐츠 박스를 넘어가지 않습니다.
+    </p>
+</body>
+</html>

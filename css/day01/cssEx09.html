@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <style>
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-1Thin.woff2') format('woff2');
+            font-weight: 100;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-2ExtraLight.woff2') format('woff2');
+            font-weight: 200;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-3Light.woff2') format('woff2');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-4Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-5Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-6SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-7Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-8ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'A2z';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/에이투지체-9Black.woff2') format('woff2');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'A2z';
+            font-size: 2em;
+        }
+
+        h3 {
+            font: italic bold 50px caption;
+            text-align: center;
+            background: #beda9e;
+            padding: 10px 40px;
+            margin: 20px auto;
+            width: fit-content;
+        }
+
+        p {
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            transition: 0.2s ease-out;
+        }
+
+        p:nth-of-type(1) {
+            font-weight: 900;
+        }
+
+        p:nth-of-type(1):hover {
+            background: #f5e0e0;
+            color: #b31919;
+            transform: scale(1.2);
+        }
+
+        p:nth-of-type(2) {
+            font-weight: 100;
+        }
+
+        p:nth-of-type(2):hover {
+            background-color: #c8d8eb;
+            color: #0f386b;
+            transform: scale(1.2);
+        }
+
+        p:nth-of-type(3) {
+            font-style: italic;
+        }
+
+        p:nth-of-type(3):hover {
+            background-color: #ace0b9;
+            color: #0a6120;
+            transform: scale(1.2);
+        }
+
+        p:nth-of-type(4) {
+            font-style: oblique;
+        }
+
+        p:nth-of-type(4):hover {
+            background-color: #f1dc65;
+            color: #e79803;
+            transform: scale(1.2);
+        }
+
+        p:nth-of-type(5) {
+            font-size: 1.5em;
+        }
+
+        p:nth-of-type(5):hover {
+            background: #d3b1ff;
+            color: #6922c5;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Consolas font</h3>
+    <hr>
+    <p>font-weight 900(폰트 굵기)</p>
+    <p>font-weight 100(폰트 굵기)</p>
+    <p>Italic Style</p>
+    <p>Oblique Style</p>
+    <p>현재 크기의 <span>1.5배</span> 크기로</p>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        div {
+            font: normal 30px verdana;
+        }
+
+        .dropText {
+            text-shadow: 3px 3px 1px #00000050;
+        }
+
+        .redText {
+            text-shadow: 3px 3px 1px #ff000090;
+        }
+
+        .blurText {
+            text-shadow: 3px 3px 10px skyblue;
+        }
+        .glowEffect {
+            text-shadow: 0px 0px 3px red;
+        }
+        .wordArtEffect {
+            color: #fff;
+            text-shadow:  0px 0px 5px darkblue;
+        }
+        .threeDEffect {
+            color: #fff;
+            text-shadow: 2px 2px 4px #00000090;
+        }
+        .multiEffect {
+            text-shadow: 2px 2px 2px #000,
+            0 0 25px #00f,
+            0 0 5px darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>텍스트 그림자</h3>
+    <hr>
+    <div class="dropText">Drop Shadow</div>
+    <div class="redText">Color Shadow</div>
+    <div class="blurText">Blur Shadow</div>
+    <div class="glowEffect">Glow Effect</div>
+    <div class="wordArtEffect">WordArt Effect</div>
+    <div class="threeDEffect">3D Effect</div>
+    <div class="multiEffect">MultiEffect Shadow Effect</div>
+</body>
+
+</html>

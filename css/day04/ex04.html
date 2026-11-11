@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니매이션</title>
+    <style>
+        @keyframes ani {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            20% {
+                transform: rotate(60deg)
+            }
+
+            50% {
+                transform: rotate(0deg)
+            }
+
+            70% {
+                transform: rotate(-60deg)
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        img {
+            width: 500px;
+            animation: ani 3s linear infinite;
+        }
+
+        div {
+            margin: 40px auto 0;
+            width: 500px;
+        }
+
+        div:hover {
+            transform: scale(1.4);
+            transform-origin: center center;
+            transition: 0.2s ease-out;
+        }
+
+        div:active {
+            background: #ccf;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>왔다리 갔다리</h3>
+    <hr>
+    <div>
+        <img src="./img.png" alt="">
+    </div>
+
+</body>
+
+</html>

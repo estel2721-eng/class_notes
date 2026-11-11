@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @Keyframes love {
+            from {
+                font-size: 100%;
+                opacity: 0.3;
+                color: rgb(252, 207, 207);
+            }
+
+            to {
+                font-size: 1000%;
+                opacity: 1;
+                color: tomato;
+            }
+        }
+
+        h3 {
+            animation: love 3s linear alternate infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>사랑</h3>
+    <p>사랑 글자가 3초동안 100%에서 시작하여 500%</p>
+    <hr>
+
+</body>
+
+</html>

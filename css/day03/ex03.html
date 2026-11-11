@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>절대 배치</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            display: inline-block;
+            background: #ccf;
+            position: relative;
+        }
+        
+        div > p {
+            position: absolute;
+            color: tomato;
+            border: 1px solid #f13131;
+            background: #fcc;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        div > img {
+            position: absolute;
+            width: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Merry Christmas</h3>
+    <hr>
+    <p>예수님이 탄생했습니다.</p>
+
+    <div>
+        <img src="./christmastree.png" alt="크리스마스트리">
+        <p style="left: 50px; top:50px">M</p>
+        <p style="left: 60px; top:40px">e</p>
+        <p style="left: 70px; top:30px">r</p>
+        <p style="left: 80px; top:20px">r</p>
+        <p style="left: 90px; top:10px">y</p>
+    </div>
+</body>
+
+</html>

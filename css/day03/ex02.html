@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상대 배치, relative</title>
+    <style>
+        div {
+            display: block;
+            height: 50px;
+            width: 50px;
+            background: #cfc;
+            border: 2px solid #ccf;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #down:hover {
+            background: #ccf;
+            border: 2px solid #cfc;
+            position: relative;
+            left: 20px;
+            bottom: 20px;
+            transition: 0.2s ease-out;
+        }
+
+        #up:hover {
+            background: #ccf;
+            border: 2px solid #cfc;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            transition: 0.2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>상대 배치, relative</h3>
+    <hr>
+    <div>T</div>
+    <div id="down">h</div>
+    <div>a</div>
+    <div>n</div>
+    <div id="up">k</div>
+    <div>s</div>
+</body>
+
+</html>

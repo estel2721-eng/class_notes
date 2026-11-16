@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for if</title>
+</head>
+
+<body>
+    <script>
+        var even = 0;
+        var odd = 0;
+        var sum = 0;
+
+        for (var i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                even += i;
+            } else {
+                odd += i;
+            }
+            sum += i;
+        }
+
+        document.write("<h2>짝수의 합 : " + even + "</h2>")
+        document.write("<h2>홀수의 합 : " + odd + "</h2>")
+        document.write("<h2>전체 수의 합 : " + sum + "</h2>")
+    </script>
+</body>
+
+</html>

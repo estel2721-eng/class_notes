@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var score = parseInt(prompt("점수입력: ", ""));
+
+        if (score > 70 && score <= 80) {
+
+            if (score > 77) {
+                document.write("<h2> C+ 입니다</h2>")
+            } else if (score < 74) {
+                document.write("<h2> C- 입니다</h2>")
+            } else {
+                document.write("<h2> C0 입니다</h2>")
+            }
+        }else {
+                document.write("<h2> 낙제입니다. </h2>")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증감 연산자</title>
+</head>
+
+<body>
+    <h1>증감 연산자</h1>
+    <hr>
+    <script>
+        var plus_num = 1;
+        plus_num = plus_num + 1;
+        plus_num++;
+        ++plus_num;
+        document.write("<h2>plus_num : " + plus_num + "<h2>");
+
+        var minus_num = 4;
+        minus_num = 4 - 1;
+        minus_num--;
+        --minus_num;
+        document.write("<h2>minus_num : " + minus_num + "<h2>");
+
+        var a1 = 100;
+        var x1 = 1;
+        var y1 = a1 + x1++;
+        document.write("<h2>Postfix : " + y1 + "<h2>");
+
+        var a2 = 100;
+        var x2 = 1;
+        var y2 = a2 + ++x2;
+        document.write("<h2>Prefix : " + y2 + "<h2>");
+
+    </script>
+</body>
+
+</html>

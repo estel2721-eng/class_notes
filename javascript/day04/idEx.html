@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id</title>
+    <style>
+        #myId {
+            font-size: 20px;
+            font-weight: bold;
+            background: #ccf;
+            color: rgb(10, 10, 80);
+            width: fit-content;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            background: #ccf;
+            padding: 10px 20px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 2px #00000055;
+            color: rgb(10, 10, 80);
+            font-weight: bold;
+            transition: 0.2s ease-out;
+        }
+
+        a:hover {
+            box-shadow: none;
+            background: rgb(10, 10, 80);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="myId">안녕하세요</h1>
+    <h2>감사해요</h2>
+    <h3>잘있어요</h3>
+    <h4>다시만나요</h4>
+    <a href="#" onclick="doPrint()">BUTTON</a> &nbsp;
+    <a href="#" onclick="document.getElementById('myId').innerHTML='안녕하세요'">RESET</a>
+    <script>
+        function doPrint(){
+            document.getElementById('myId').innerHTML = 'HELLO WORLD HELLO JAVASCRIPT'
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        var url = "http://www.itpaper.co.kr/index.php";
+        document.write("<p>문자열 : " + url + "</p>");
+
+        var len = url.length;
+        document.write("<p>문자열 길이 : " + len + "</p>")
+
+        // 파라미터로 설정된 위치의 글자를 리턴함
+        var str2nd = url.charAt(2);
+        document.write("<p>두번째 글자 : " + str2nd + "</p>")
+
+        // 파라미터로 전달된 글자가 처음 나타나는 위치를 리턴함
+        var position1 = url.indexOf("/");
+        document.write("<p>'/'가 처음 나타나는 위치 : " + position1 + "</p>");
+
+        // indexOF에 파라미터가 두 개인 경우
+        // 두번째 숫자 값은 첫번째 파라미터의 글자를 찾기
+        var position2 = url.indexOf("/", position1 + 1);
+        document.write("<p>'/'가 두번째로 나타나는 위치 : " + position2 + "</p>");
+
+        // 파라미터로 전달된 글자가 마지막으로 나타내는 위치를 리턴
+        // 단 이 위치를 문자열의 끝에서 부터 세는 것이 아니라,
+        // 문자열의 처음에서 부터 센다.
+
+        var position3 = url.lastIndexOf("/");
+        document.write("<p> / 가 마지막으로 나타나는 위치 : " + position3 + "</p>")
+
+        // 잘라내기 위한 시작위치와 끝위치를 파라미터 설정
+        var subString1 = url.substring(0, 5);
+        document.write("<p>문자열 자르기 : " + subString1 + "</p>")
+
+        var subString2 = url.substring(8,);
+        document.write("<p>문자열 자르기 : " + subString2 + "</p>")
+
+        var uppercase = url.toUpperCase();
+        document.write("<p>모든 글자 대문자로 변환하기 : " + uppercase + "</p>")
+
+        var lowercase = url.toLowerCase();
+        document.write("<p>모든 글자 소문자로 변환하기 : " + lowercase + "</p>")
+
+    </script>
+</body>
+
+</html>

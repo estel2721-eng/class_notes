@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+
+<body>
+    <script>
+        // 빈 배열 생성
+        var myArray = new Array();
+
+        // 반복문을 통해 배열의 공간을 늘리고 값을 저장
+        for (var i = 0; i < 10; i++) {
+            myArray[i] = i;
+        }
+
+        document.write("<p>배열의 길이 : " + myArray.length + "</p>")
+
+        // 반복문을 통해 배열의 길이만큼 반복하도록 설정하여 값을 출력
+        for (var i = 0; i < myArray.length; i++) {
+            document.write("<p>" + myArray[i] + "</p>")
+        }
+    </script>
+</body>
+
+</html>

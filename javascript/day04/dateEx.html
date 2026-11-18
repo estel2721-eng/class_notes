@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+    <style>
+        h2 {
+            background: #f1f1f1;
+            color: #414141;
+            width: fit-content;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var days = ['일', '월', '화', '수', '목', '금', '토'];
+        var myDate = new Date();
+        // document.write("<h2>" + myDate + "</h2>");
+
+        var yy = myDate.getFullYear();
+        var mm = myDate.getMonth() + 1;
+        var dd = myDate.getDate();
+        var i = myDate.getDay();
+        var day = days[i];
+
+        var hh = myDate.getHours();
+        var mi = myDate.getMinutes();
+        var ss = myDate.getSeconds();
+
+        // var result = "오늘은 " + yy + "년 " + mm + "월 " + dd + "일 " + day + "요일 " + hh + "시 " + m + "분 " + ss + "초 입니다."
+        // document.write("<h2>" + result + "</h2>");
+
+        // date 객체안에 저장된 시간을 임의의 날짜로 변경함
+        // 2026년 11월
+        myDate.setYear(2026);
+        myDate.setMonth(11);
+        myDate.setDate(25);
+        myDate.setHours(11);
+        myDate.setMinutes(16);
+        myDate.setSeconds(30);
+
+        var yy = myDate.getFullYear();
+        var mm = myDate.getMonth()+1;
+        var dd = myDate.getDate();
+        var i = myDate.getDay();
+        var day = days[i];
+        var hh = myDate.getHours();
+        var mi = myDate.getMinutes();
+        var ss = myDate.getSeconds();
+
+        var result = "오늘은 " + yy + "년 " + mm + "월 " + dd + "일 " + day + "요일 " + hh + "시 " + mi + "분 " + ss + "초 입니다."
+        document.write("<h2>" + result + "</h2>");
+
+        
+    </script>
+
+</body>
+
+</html>

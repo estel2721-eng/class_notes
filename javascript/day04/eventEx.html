@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+
+<body>
+    <script>
+
+        // 1. 함수를 정의해서 사용하는 방법
+        // 2. 이벤트를 적용할 html태그에 이벤트 이름을 속성(아이디,클래스)로 사용
+
+        function sum(x, y) {
+            z = x + y;
+            return z;
+        }
+
+        function printResult() {
+            var myTag = document.getElementById('question');
+            var result = sum(10, 50);
+
+            myTag.innerHTML = result;
+        }
+
+        function showResult(){
+            var result = sum(10, 50);
+            var red_result = "<font color ='red'>"+result+"</font>";
+
+            document.getElementById("question").innerHTML = red_result;
+        }
+        function hideResult() {
+            document.getElementById("question").innerHTML = "?";
+        }
+        function reset() {
+            var myTag = document.getElementById('question');
+            myTag.innerHTML = '?';
+        }
+    </script>
+    <h1 onmouseenter="showResult()" onmouseleave="hideResult()">10 + 50 = <span id="question">?</span></h1>
+    <input type="button" onclick="printResult()" value="결과보기">
+    <input type="reset" id="reset" onclick="reset()">
+</body>
+
+</html>

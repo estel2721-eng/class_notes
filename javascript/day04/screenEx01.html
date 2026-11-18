@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen</title>
+    <script>
+        // screen 객체의 정보 조회
+        document.write("<h1>화면 높이 : " + screen.availHeight + "</h1>");
+        document.write("<h1>화면 높이 : " + screen.availWidth + "</h1>");
+        document.write("<h1>화면 높이 : " + screen.colorDepth + "</h1>");
+        document.write("<h1>픽셀당 높비 : " + screen.height + "</h1>");
+        document.write("<h1>픽셀당 너비 : " + screen.width + "</h1>");
+        document.write("<h1>픽셀당 비트 수 : " + screen.pixelDepth + "</h1>");
+        document.write("<h1>현재 화면 방향 : " + screen.orientation.type + "</h1>");
+
+        document.write("<hr color='red'>")
+
+        function getCenterPixcel() {
+            var center = new Array();
+            center[0] = parseInt(screen.availWidth/2);
+            center[1] = parseInt(screen.availHeight/2);
+            return center;
+        }
+
+        var screenCenter = getCenterPixcel();
+
+        document.write("<h2> 화면의 중심 좌표 : " + "x = " + screenCenter[0] + "px, y =" + screenCenter[1] + "px</h2>")
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

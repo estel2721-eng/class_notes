@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <script>
+        function insertQuestion(){
+            var q = prompt('수식을 입력하세요');
+            var answer = eval(q);
+
+            // 사용자가 입력한 수식과 결과를 하나의 문자열로 연결
+            var result = q + " = " + answer;
+            
+            // 결과출력
+            document.getElementById('question').innerHTML = result;
+        }
+    </script>
+</head>
+<body onload="insertQuestion()">
+    <h1 id="question"></h1>
+</body>
+</html>

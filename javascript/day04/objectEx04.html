@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+
+<body>
+    <script>
+        // 비어있는 객체 생성
+        var people = {};
+
+        people.name = '홍길동';
+        people.gender = '남자';
+
+        // 객체 안에 함수를 포함 시키기
+        people.sayName = function () {
+            // 객체 안에 포함된 함수에서 멤버변수에 접근하기
+            // 위에서는 반드시 "this." 이라고 하는 예약어를 사용해야함
+            document.write("<h1>" + this.name + "</h1>")
+        }
+
+        people.sayGender = function () {
+            // this라고 하는 예약어는 현재 객체를 의미한
+            document.write("<h2>" + people.gender + "</h2>")
+        }
+
+
+        people.getName = function () {
+            return this.name;
+        }
+
+        people.getGender = function () {
+            return this.gender;
+        }
+
+
+        people.saySomething = function (msg) {
+            document.write("<h2>" + msg + "</h2>")
+        }
+
+
+        people.sayInfo = function () {
+            document.write("<h2>" + this.name + "님은 " + this.gender + " 입니다.</h2>")
+        }
+
+        people.sayName();
+        people.sayGender();
+        people.saySomething('안녕');
+        people.sayInfo();
+    </script>
+</body>
+
+</html>

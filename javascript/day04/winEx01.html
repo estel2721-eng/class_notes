@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+
+<body>
+    <h1>window 객체</h1>
+    <h2>open 메소드</h2>
+    <a href="#" onclick="open1(); return false">새창 열기</a>
+    <br>
+    <a href="#" onclick="open2(); return false">팝업 창 열기</a>
+    <br>
+    <a href="#" onclick="open3(); return false">팝업 창 열기2</a>
+
+    <!-- 파라미터를 포함한 함수 호출 -->
+    <script>
+        function open1() {
+            window.open('openEx.html');
+        }
+        function open2() {
+            window.open('openEx.html', '_blank', 'width=300, height=300, scrollbars=no, toolbar=no, menubar=no, status=no,location=no')
+        }
+        function open3() {
+            window.open('./openEx.html', 'mywin', 'width=500,height=300, scrollbars=no, toolbar=no, menubar=no, status=no, location=no')
+        }
+    </script>
+</body>
+
+</html>

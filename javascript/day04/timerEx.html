@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <script>
+        function printTime() {
+            var days = ['일', '월', '화', '수', '목', '금', '토'];
+            var myDate = new Date();
+
+            var yy = myDate.getFullYear();
+            var mm = myDate.getMonth() + 1;
+            var dd = myDate.getDate();
+            var i = myDate.getDay();
+            var day = days[i];
+
+            var hh = myDate.getHours();
+            var mi = myDate.getMinutes();
+            var ss = myDate.getSeconds();
+
+            var result = "오늘은 " + yy + "년 " + mm + "월 " + dd + "일 " + day + "요일 " + hh + "시 " + mi + "분 " + ss + "초 입니다."
+
+            // id 속성값이 timer 인 요소에게 결과를 출력함
+            document.getElementById("timer").innerHTML = result;
+
+        }
+
+        function startTimer() {
+            // printTime 함수를 1초에 한번씩 갱신
+            setInterval(printTime, 1000)
+        }
+    </script>
+</head>
+
+<body onload="startTimer()">
+    <h1 id="timer"></h1>
+</body>
+
+</html>

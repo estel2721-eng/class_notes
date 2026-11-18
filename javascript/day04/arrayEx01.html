@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>배열을 알아봅시다</h1>
+    <hr>
+    <script>
+        // 배열: 하나의 값에 여러개의 변수를 그룹화하는 단위
+        // 배열이 생성되면 그 안의 값들은 0부터 순서대로
+        // 일련번호를 부여받는다 (배열의 인덱스)
+
+        // 배열 생성
+        var myArray = new Array('가길동', '나길동', '다길동');
+        var myArray2 = ['가길동', '나길동', '다길동'];
+
+        // 배열에 저장된 값들을 읽기
+        document.write('<h2>' + myArray[0] + '</h2>');
+        document.write('<h2>' + myArray[1] + '</h2>');
+        document.write('<h2>' + myArray[2] + '</h2>');
+
+        myArray[0] = "GaGildong";
+        myArray[1] = "NaGildong";
+        myArray[2] = "DaGildong";
+
+        document.write('<h1>' + myArray[0] + '</h2>');
+        document.write('<h1>' + myArray[1] + '</h2>');
+        document.write('<h1>' + myArray[2] + '</h2>');
+
+        for (var i = 0; i < myArray.length; i++) {
+            document.write('<h1> for 문 인덱스' + i + ' : ' + myArray[i] + '</h2>');
+        }
+
+        for (var i = 0; i < myArray2.length; i++) {
+            document.write('<h1> for 문 인덱스' + i + ' : ' + myArray2[i] + '</h2>');
+        }
+    </script>
+</body>
+
+</html>

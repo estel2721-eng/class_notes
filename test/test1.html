@@ -9,26 +9,31 @@
 
 <body>
     <script>
-        function solution(array) {
-            var answer = 0;
-            var count;
-            var maxCount = 0;;
-            var i, j
+        const readline = require('readline'); // 또는 import readline from 'readline';
 
-            for (i = 0; i < array.length; i++) {
-                count = 0;
-                for (j = 0; array.length; j++) {
-                    if (array[i] == array[j]) {
-                        count++;
-                    }
-                }
-                if (count > maxCount) {
-                    maxCount = count;
-                }
-            }
-            return maxCount;
-        }
-        console.log(maxCount);
+        // 1. Interface 생성
+        const rl = readline.createInterface({
+            input: process.stdin,  // 표준 입력 스트림
+            output: process.stdout // 표준 출력 스트림
+        });
+
+        // 2. 질문하고 입력받기 (rl.question)
+        rl.question('이름이 무엇인가요? ', (answer) => {
+            console.log(`안녕하세요, ${answer}님!`);
+
+            rl.close(); // 입력 종료 (프로세스가 계속 유지되는 것 방지)
+        });
+
+        // 3. 또는 line 이벤트를 통해 한 줄씩 입력받기 (코딩 테스트용)
+        rl.on('line', (line) => {
+            console.log(`입력된 값: ${line}`);
+            rl.close();
+        });
+
+        rl.on('close', () => {
+            process.exit();
+        });
+
     </script>
 </body>
 

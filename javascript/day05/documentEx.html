@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 제어</title>
+    <style>
+        .box1 {
+            margin: 10px auto;
+            border: 5px solid #ccc;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .box2 {
+            margin: 10 auto;
+            border: 10px solid tomato;
+            padding: 25px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS 제어</h1>
+    <div id="box" class="box1">
+        <h2>실행 영역</h2>
+    </div>
+    <input type="button" value="(폰트) red" onclick="setFontColor('red')">
+    <input type="button" value="(폰트) green" onclick="setFontColor('green')">
+    <input type="button" value="(폰트) blue" onclick="setFontColor('blue')">
+
+    <input type="button" value="(배경) red" onclick="setBackgroundColor('red')">
+    <input type="button" value="(배경) green" onclick="setBackgroundColor('green')">
+    <input type="button" value="(배경) blue" onclick="setBackgroundColor('blue')">
+
+    <input type="button" value="width=50%" onclick="setBoxSize('50%')">
+    <input type="button" value="width=auto" onclick="setBoxSize('auto')">
+    <input type="button" value="box1" onclick="changeClass('box1')">
+    <input type="button" value="box2" onclick="changeClass('box2')">
+
+    <script>
+        function setFontColor(color) {
+            // id 값이 박스인 요소에 적용
+            var box = document.getElementById("box");
+
+            // 글자색을 파라미터로 전달받아 설정함
+            box.style.color = color;
+        }
+
+        function setBackgroundColor(color) {
+            // id 값이 박스인 요소에 적용
+            var box = document.getElementById("box");
+
+            // 배경색을 파라미터로 전달받아 설정함
+            box.style.backgroundColor = color;
+        }
+
+        function setBoxSize(width) {
+            var box = document.getElementById("box");
+            box.style.width = width;
+        }
+
+        function changeClass(cls) {
+            var box = document.getElementById("box");
+            box.className = cls;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <title>jQuery</title>
+    <script>
+        function sayHello() {
+            alert('Hi This is jQuery');
+        }
+
+        // initPage 에게 "$"라는 객체(함수)가 파라미터로 전달되는데 
+        // 이 "$"는 jQuery의 모든 기능을 담고 있는 jQuery의 최상 객체임
+        function initPage($) {
+            // var h1 = document.getElementById('hello');
+            // h1.innerHTML = "hello JavaScript"
+            var h1 = $("#hello");
+            h1.html("Hello jQuery");
+        }
+
+        // sayHello();
+        jQuery(initPage);
+    </script>
+</head>
+
+<body>
+    <h1 id="hello"></h1>
+</body>
+
+</html>

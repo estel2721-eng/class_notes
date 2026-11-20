@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <title>jquery</title>
+    <style>
+        .dotgothic16-regular {
+            font-family: "DotGothic16", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #container {
+            background-color: #FFEFD2;
+            width: auto;
+            padding: 10px;
+            border: 5px solid #ff933a;
+        }
+
+        #title {
+            background-color: #F5A89A;
+            padding: 10px;
+        }
+
+        .box {
+            padding: 10px;
+            background-color: #6AB0AF;
+            font-size: 20px;
+        }
+
+        ul {
+            padding: 10px;
+            margin: 20px 0;
+            width: auto;
+            border: 5px solid #ff933a;
+            list-style: none;
+        }
+
+        ul>li:first-child,
+        ul>li:last-child {
+            border: 3px dotted #F5A89A;
+            padding: 5px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 24px;
+            background: #ff933a;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        pre {
+            font-family: "DotGothic16", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            background: #6AB0AF;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function () {
+            // id 값에 의한 접근, 가장 일반적인 방법
+            $("title").html("두번째 제목");
+            $('#title').html("두번째 제목");
+            $('#title').html("テーマです。");
+
+            // 클래스로 지정
+            $('.box').html("おはようございます。");
+
+            // 모든 자식 태그
+            $("ul>li").html("リストです。");
+
+            // 선택 자식 태그 지정
+            $("ul>li:eq(1)").html("セコンドリストです。");
+            $("ul>li:eq(2)").html("サード リストです。");
+
+            // 여러개의 요소를 지정할 때
+            $("pre, p").html("CSS です。");
+            // name 속성이 source 인 항목만 지정
+            $("pre[name='source']").html("CSS Selector です。");
+
+            $("ul>li:first-child").html("First-Child");
+            $("ul>li:last-child").html("Last-Child");
+        })
+
+    </script>
+</head>
+
+<body>
+    <div id="container" class="dotgothic16-regular">
+        <h1 id="title"></h1>
+        <div class="box"></div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <p></p>
+    <pre></pre>
+    <pre name="source"></pre>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery API -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <!-- 사용자 정의 스크립트 -->
+    <script>
+        jQuery(function ($) {
+            var h1 = $("#hello");
+            h1.html("Hello jQuery");
+        })
+
+        $(function () {
+            $("#hello").html("Hello jQuery !!");
+            alert($("#text").html());
+        })
+    </script>
+</head>
+
+<body>
+<h1 id="hello"></h1>
+<p id="text">안녕하세요 jQuery 반갑다~</p>
+</body>
+
+</html>

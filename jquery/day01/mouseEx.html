@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/event.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- jqurey -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+
+    <script>
+        // focus & blur
+        $(function () {
+            // focus
+            $("#input>input[type='text']").focus(function () {
+                $("#result").html("마우스 포인터가 포커스 안에 들어왔습니다.")
+            });
+
+            // blur
+            $("#input>input[type='text']").blur(function () {
+                $("#result").html("마우스 포인터가 포커스 밖으로 나갔습니다.")
+            });
+
+            // 페이지가 열리면서 자동으로 포커스 설정
+            $("#input>input[type='text']").focus();
+        })
+
+    </script>
+
+    <title>mouse</title>
+
+    <style>
+        body {
+            font-family: "Nanum Pen Script", cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MOUSE EVENT(focus/blur)</h1>
+    <div id="input">
+        <input type="text">
+    </div>
+
+    <h2>RESULT</h2>
+    <div id="result">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+
+    <link rel="stylesheet" href="./css/event.css">
+
+    <!-- jQuery -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script>
+        // mouseenter & mouseleave
+        $(function () {
+            // 마우스 버튼을 눌렀을 때
+            $("#input").mousedown(function () {
+                $("#result").html("Mousedown Event");
+            })
+            // 마우스 버튼을 눌렀다가 띄었을 때
+            $("#input").mouseup(function () {
+                $("#result").html("Mouseup Event");
+            })
+            // 마우스 커서가 올라갔을 때
+            $("#input").mouseenter(function () {
+                $("#result").html("Mouseenter Event");
+            })
+            // 마우스 커서가 내려갔을 때
+            $("#input").mouseleave(function () {
+                $("#result").html("Mouseleave Event");
+            })
+        })
+
+    </script>
+</head>
+
+<body>
+    <h1>MOUSE EVENT(mouseenter/mouseleave)</h1>
+    <div id="input">
+        안녕하세요! 마우스 이벤트를 보여줄게요!
+    </div>
+
+    <h2>RESULT</h2>
+    <div id="result">
+
+    </div>
+</body>
+
+</html>

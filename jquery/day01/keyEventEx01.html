@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Event</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/event.css">
+    <!-- jquery -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+
+    <script>
+        $(function () {
+            let down_count = 0;
+            let up_count = 0;
+
+            $("#input").keydown(function () {
+                down_count++;
+                $("#result").html(down_count + "번 keydown 했어용 / " + up_count + " 번 keyup 했어용");
+            })
+
+            $("#input").keyup(function () {
+                up_count++;
+                $("#result").html(down_count + "번 keydown 했어용 / " + up_count + " 번 keyup 했어용");
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <h1>Key Event</h1>
+    <div id="input">
+        <input type="text">
+    </div>
+    <h2>Result</h2>
+    <div id="result"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click Event</title>
+    <link rel="stylesheet" href="./css/event.css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+
+    <script>
+        $(function () {
+            // double click event
+            $("#input").click(function () {
+                $("#result").html("마우스로 클릭했어용");
+            })
+
+            $("#input").dblclick(function () {
+                $("#result").html("이번에는 더블클릭 했군용");
+            })
+
+            // 콜백
+            $("#input").hover(function () {
+                $("#result").html("마우스가 들어왔어용");
+            }, function () {
+                $("#result").html("마우스가 나갔어용");
+            })
+        })
+
+        $(function(){
+            let count = 0;
+            $('#input').click(function(){
+                count++;
+                $('#count').html(count + '번 클릭했당');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Click Event</h1>
+    <div id="input">
+        click or double click
+    </div>
+    <h2>Result</h2>
+    <div id="result"></div>
+    <div id="count"></div>
+</body>
+
+</html>
